@@ -8,3 +8,4 @@ python -m venv venv
 ## Notebook 
 notebook.ipynb
 ---
+### Python version 3.11.9
