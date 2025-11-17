@@ -6,13 +6,8 @@ from matplotlib import pyplot as plt
 import numpy as np
 from IPython.display import clear_output
 
-
-list_de_mot = ["python", "ordinateur", "voiture", "maison", "pendu"]
-N_tent = 8
-
-mot = random.choice(list_de_mot)
-mot_masq = "_" * len(mot)
-
+def func_add(a, b):
+    return a + b
 
 # function pour dessiner le pendu
 def afficher_pendu(nb_tentat):
@@ -56,26 +51,40 @@ def afficher_pendu(nb_tentat):
     plt.ylim(-0.2, 1.2)  # Ajuste les limites de l'axe y
     plt.show()  # Affiche le pendu
 
+def input_lettre():
+    while True:
+        try:
+            lettre = str(input("Devinez une lettre"))[0]
+            print(f"Vorte lettre: {lettre}")
+            return lettre  
+        except ValueError:
+            print("Error. Reessayez")
 
-print(mot_masq, "\n", f"Vous avez {N_tent} tentatives restantes ")
-afficher_pendu(N_tent)
+if __name__ == "__main__":
+    print(mot_masq, "\n", f"Vous avez {N_tent} tentatives restantes ")
+    afficher_pendu(N_tent)
 
+    list_de_mot = ["python", "ordinateur", "voiture", "maison", "pendu"]
+    N_tent = 8
 
-while N_tent and (mot_masq != mot):
-    lettre = input("Devinez une lettre")
+    mot = random.choice(list_de_mot)
+    mot_masq = "_" * len(mot)
+    while N_tent and (mot_masq != mot):
+        lettre = input_lettre()
     
-    if lettre.lower() in mot.lower():
-        mot_masq =  "".join([
-            mot[i] if mot[i].lower() == lettre else mot_masq[i]
-            for i in range(len(mot))
-            ])
-        clear_output(wait=True)
-        print(mot_masq, "\n", f"Vous avez {N_tent} tentatives restantes ")
-        afficher_pendu(N_tent)
+    
+        if lettre.lower() in mot.lower():
+            mot_masq =  "".join([
+                mot[i] if mot[i].lower() == lettre else mot_masq[i]
+                for i in range(len(mot))
+                ])
+            clear_output(wait=True)
+            print(mot_masq, "\n", f"Vous avez {N_tent} tentatives restantes ")
+            afficher_pendu(N_tent)
         
-    else:
-        N_tent -= 1
-        clear_output(wait=True)
-        print(mot_masq, "\n", f"Vous avez {N_tent} tentatives restantes ")
-        afficher_pendu(N_tent)
+        else:
+            N_tent -= 1
+            clear_output(wait=True)
+            print(mot_masq, "\n", f"Vous avez {N_tent} tentatives restantes ")
+            afficher_pendu(N_tent)
 
