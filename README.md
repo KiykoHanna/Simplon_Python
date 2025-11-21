@@ -9,6 +9,19 @@ data - dossier pour stocker les fichiers CSV
 ### notebook.ipynb 
 - Un notebook de base pour réaliser les exercices de révision de Python
 ---
+## Mini projet de remise en route 
+En respectant les bonnes pratiques que l’on a vu jusqu’à présent:
+structure app/components
+readme.md
+requirements.txt
+pytest simple vérifier que le code décodé correspond au code
+docstring SAS IA - DocString
+journalisation SAS IA - Logging
+redmail SAS IA - Redmail
+github action - test automatique SAS IA - Github Actions
+
+---
+
 ### MLclassification.ipynb 
 - Un projet simple de classification des vins avec une base de données SKLEARN pour la répétition de fonctions de base
 ---
