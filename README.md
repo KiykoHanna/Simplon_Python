@@ -9,6 +9,7 @@ data - dossier pour stocker les fichiers CSV
 ### notebook.ipynb 
 - Un notebook de base pour réaliser les exercices de révision de Python
 ---
+
 ## Mini projet de remise en route 
 En respectant les bonnes pratiques que l’on a vu jusqu’à présent:
 structure app/components
