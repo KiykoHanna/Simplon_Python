@@ -21,7 +21,7 @@ def main():
     """
 
     print("Choisissez l'action : encoder (u) / décoder (d)")
-    act = input().lower()
+    act = input().strip().lower()
 
     print("Saissez le text")
     text = input()

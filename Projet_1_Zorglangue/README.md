@@ -25,6 +25,6 @@ Les majuscules restent majuscules après inversion.
 
 - Conservation des majuscules/minuscules
 
-- Interface CLI simple (optionnel)
+- Interface CLI simple (interactive)
 
 - Tests automatisés avec pytest

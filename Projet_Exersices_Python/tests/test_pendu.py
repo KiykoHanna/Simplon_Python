@@ -4,7 +4,7 @@ import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
 
 import pytest
-from pendu import func_add, input_lettre
+from Projet_Exersices_Python.pendu import func_add, input_lettre
 
 @pytest.mark.parametrize(a, b, rez, [
     (1, 2, 3),
