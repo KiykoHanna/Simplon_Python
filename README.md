@@ -81,11 +81,11 @@ Chaque dossier correspond à un module ou à un projet autonome avec son propre 
         Décalage configurable
         Encodage / décodage
         Gestion des majuscules et de la ponctuation
-        Amélioration :
+    - Amélioration :
         Interface CLI
         Brute-force pour retrouver la clé
 
-## Projet 3–4 : Cryptage d’une image ou d’un texte
+## Sommaire Projet 3–4 : Cryptage d’une image ou d’un texte
     - Manipulation binaire ou pixel par pixel
     - Lecture/écriture d’images
     - Encodage simple d’un message
